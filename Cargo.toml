@@ -1,0 +1,6 @@
+[package]
+name = "pricing-engine"
+version = "0.1.0"
+authors = ["Cameron Pfiffer <cpfiffer@gmail.com>"]
+
+[dependencies]
