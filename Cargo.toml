@@ -4,3 +4,6 @@ version = "0.1.0"
 authors = ["Cameron Pfiffer <cpfiffer@gmail.com>"]
 
 [dependencies]
+rand = "0.5"
+log = "0.4"
+pretty_env_logger = "0.2.4"
