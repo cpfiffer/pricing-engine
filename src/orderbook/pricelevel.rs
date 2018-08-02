@@ -1,5 +1,4 @@
 use orderbook::orders::Order;
-use std::ops::Add;
 
 #[derive(Default)]
 pub struct PriceLevel {
@@ -11,7 +10,7 @@ impl PriceLevel {
         return PriceLevel {quantity: order.amount}
     }
 
-    pub fn merge(&self, other: PriceLevel) {
+    pub fn merge(&mut self, other: PriceLevel) {
         self.quantity += other.quantity;
     }
 }

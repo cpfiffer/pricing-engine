@@ -1,10 +1,12 @@
-#[derive(PartialEq, Eq, Debug)]
+extern crate serde_json;
+
+#[derive(Serialize, Deserialize, PartialEq, Eq, Debug)]
 pub enum Ordertype{
     Buy = 1,
     Sell = -1
 }
 
-#[derive(Debug)]
+#[derive(Serialize, Deserialize, Debug)]
 pub struct Order {
     pub order_type: Ordertype,
     pub price_string: String,
